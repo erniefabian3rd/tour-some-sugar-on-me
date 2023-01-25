@@ -1,0 +1,49 @@
+@import "details.css";
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+body,
+button,
+input,
+select,
+textarea {
+	color: white;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+    background-image: url(/live-music.png)
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+    color: white;
+    font-size: 35px;
+    text-shadow: black 2px 5px;
+}
+
+.bookings {
+    background: rgba(0,0,0, 0.5);
+    border: 2px solid rgba(0,0,0, 0.5);
+}
+
+.details {
+    padding-top: 20px;
+}
+
+.bookings-list {
+    padding-left: 250px;
+    padding-right: 200px;
+}
+
+.venues-list {
+    padding-left: 25px;
+}
+
+.bands-list {
+    padding-left: 25px;
+}

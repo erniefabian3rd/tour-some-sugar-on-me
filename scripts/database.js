@@ -93,6 +93,34 @@ const database = {
         genre: "Hardcore",
         yearFormed: 2005
 
+    }, {
+        id: 6,
+        name: "Underoath",
+        memberCount: 6,
+        genre: "Post-Hardcore",
+        yearFormed: 1997
+
+    }, {
+        id: 7,
+        name: "idle threat",
+        memberCount: 5,
+        genre: "Rock",
+        yearFormed: 2014
+
+    }, {
+        id: 8,
+        name: "Copeland",
+        memberCount: 5,
+        genre: "Rock",
+        yearFormed: 2001
+
+    }, {
+        id: 9,
+        name: "Phoebe Bridgers",
+        memberCount: 1,
+        genre: "Indie Folk",
+        yearFormed: 2014
+
     }],
 
     bookings: [{
@@ -125,6 +153,39 @@ const database = {
         venueId: 2,
         date: "March 3rd, 2023"
         
+    },{
+        id: 6,
+        bandId: 6,
+        venueId: 1,
+        date: "February 3rd, 2023"
+    },{
+        id: 7,
+        bandId: 3,
+        venueId: 1,
+        date: "February 3rd, 2023"
+
+    }, {
+        id: 8,
+        bandId: 7,
+        venueId: 2,
+        date: "March 3rd, 2023"
+    }, {
+        id: 9,
+        bandId: 8,
+        venueId: 3,
+        date: "February 4th, 2023"
+
+    }, {
+        id: 10,
+        bandId: 7,
+        venueId: 5,
+        date: "February 17th, 2023"
+
+    }, {
+        id: 11,
+        bandId: 9,
+        venueId: 4,
+        date: "February 11th, 2023"
     }]
 }
 
