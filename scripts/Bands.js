@@ -8,11 +8,12 @@
     Export function to main.js
 */
 
-import { getVenues, getBands, getBookings } from "./database.js"
+import { getVenues, getBands, getBookings, getBandMembers } from "./database.js"
 
 const venues = getVenues()
 const bands = getBands()
 const bookings = getBookings()
+const bandMembers = getBandMembers()
 
 export const bandsList = () => {
     let bandsHTML = `<ul>`
@@ -40,6 +41,17 @@ const venuesBookedForBand = (band) => {
     return venueBooked
 }
 
+const bandBio = (band) => {
+    let memberBioList = ``
+
+    for (const member of bandMembers) {
+        if (member.bandId === band.id) {
+            memberBioList += `${member.firstName} ${member.lastName} (${member.role}) \n`
+        }
+    }
+    return memberBioList
+}
+
 document.addEventListener(
     "click",
     (clickEvent) => {
@@ -54,9 +66,9 @@ document.addEventListener(
                     matchingBand = band
                 }
             }
-
+            const memberBio = bandBio(matchingBand)
             const venueBooked = venuesBookedForBand(matchingBand)
-            window.alert(`${venueBooked}`)
+            window.alert(`${memberBio}\nUpcoming shows:\n${venueBooked}`)
         }
     }
 )
